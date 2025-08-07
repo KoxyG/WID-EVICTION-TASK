@@ -16,3 +16,36 @@
  * 
  * Bonus Points: Attach screenshot of proof it works on your terminal.
  */
+function divideByNumberNum(input) {
+  try {
+    if (typeof input !== 'number' || isNaN(input)) {
+      throw new Error("Invalid number");
+    }
+
+    if (input === 0) {
+      throw new Error("Cannot divide by 0");
+    }
+
+    const result = 100 / input;
+    console.log(`100 divided by ${input} is ${result}`);
+  } catch (error) {
+    console.error("Error:", error.message);
+  }
+
+
+divideByNumberNum(5);
+divideByNumberNum(0);
+divideByNumberNum("hello");
+divideByNumberNum(NaN);
+divideByNumberNum(25);
+
+//terminal result 
+100 divided by 5 is 20
+Error:
+Cannot divide by 0
+Error:
+Invalid number
+Error:
+Invalid number
+100 divided by 25 is 4
+  
