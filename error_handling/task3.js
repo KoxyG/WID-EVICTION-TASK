@@ -16,3 +16,29 @@
  * 
  * Bonus Points: Attach screenshot of proof it works on your terminal.
  */
+
+// Function to divide 100 by a given number
+
+function divideByNumber(num) {
+  try {
+    if (typeof num !== "number" || isNaN(num)) {
+      throw new Error("Invalid number");
+    }
+
+    if (num === 0) {
+      throw new Error("Cannot divide by zero");
+    }
+
+    
+    return 100 / num;
+
+  } catch (error) {
+    return `Error: ${error.message}`;
+  }
+}
+
+// Test cases
+console.log(divideByNumber(5));       
+console.log(divideByNumber(0));      
+console.log(divideByNumber("hello")); 
+
