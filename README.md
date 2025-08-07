@@ -48,4 +48,3 @@ Once you've completed all the tasks and pushed your changes to your forked GitHu
 ## Submit Your PR
 
 After creating the PR, submit the GitHub PR URL via the Google Form provided by your instructor.
-# WID-EVICTION-TASK
