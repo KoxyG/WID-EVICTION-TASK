@@ -15,4 +15,24 @@
  * 
  * Bonus Points: Attach screenshot of proof it works on your terminal.
  */
+class Car {
+    constructor(make, model, year) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+    }
+
+    
+    getCarInfo() {
+        return `Make: ${this.make}, Model: ${this.model}, Year: ${this.year}`;
+    }
+}
+
+
+const car1 = new Car("Toyota", "Corolla", 2020);
+const car2 = new Car("Tesla", "Model S", 2023);
+
+
+console.log(car1.getCarInfo());
+console.log(car2.getCarInfo());
 
