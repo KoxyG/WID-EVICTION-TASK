@@ -16,3 +16,27 @@
  * 
  * Bonus Points: Attach screenshot of proof it works on your terminal.
  */
+function divideByNumber(num) {
+  try {
+    // Check if input is not a number
+    if (isNaN(num)) {
+      throw new Error("Invalid number");
+    }
+
+    // Check for division by zero
+    if (num === 0) {
+      throw new Error("Cannot divide by zero");
+    }
+
+    // If valid, perform division
+    const result = 100 / num;
+    console.log(`Result: ${result}`);
+  } catch (error) {
+    console.error(`Error: ${error.message}`);
+  }
+}
+
+// Test cases
+divideByNumber(5);      // Valid number
+divideByNumber(0);      // Cannot divide by zero
+divideByNumber("hello"); // Invalid number
