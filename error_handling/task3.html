@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<title>Array Methods</title>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <div class="m-6">    
+        <h1>Divide 100 by a number</h1>
+    <br>
+    <input type="text" id="numInput" placeholder="Enter a number..." class="border-2 p-2">
+    <button onclick="divideByNumber()" class="border-2 p-2">Divide</button>
+    <p id="result"></p> 
+    </div>
+
+
+    <script>
+        function divideByNumber(){
+            const input = document.getElementById("numInput").value;
+            const resultElement = document.getElementById("result");
+            const num = Number(input);
+
+            try{
+                if (input == ""){
+                    throw new Error("Input is required");
+                }
+                if (isNaN(num)){
+                    throw new Error("Invalid number");
+                }
+                if (num == 0){
+                    throw new Error("Cannot divide by zero");
+                }
+
+                const result = 100/num;
+                resultElement.textContent = "Result: 100 / " + num + "=" + result;
+                resultElement.style.color ="green";
+            }
+            catch (error){
+                resultElement.textContent = "Error:" + error.message;
+                resultElement.style.color ="red";
+            }
+        }
+
+    </script>
+
+
+</body>

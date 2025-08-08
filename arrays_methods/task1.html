@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<title>Array Methods</title>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <h1 id="sum"></h1>
+    <h1 id="max"></h1>
+    <h1 id="min"></h1>
+    
+</body>
+
+<script>
+    const array=[4, 19, 12, 9, 5, 6, 7, 8, 16, 10];
+    document.getElementById("sum").innerHTML = array.reduce(sumArray);
+    document.getElementById("max").innerHTML = findMax(array);
+    document.getElementById("min").innerHTML = findMin(array);
+    
+
+    function sumArray(total, currentValue){
+        return total + currentValue;
+    }
+
+    function findMax(arr){
+        return arr.reduce(function(a,b){
+            if (a > b){
+                return a;
+            }
+            else{
+                return b;
+            }
+        });
+    }
+
+    function findMin(arr){
+        return arr.reduce(function(a,b){
+            if (a < b){
+                return a;
+            }
+            else{
+                return b;
+            }
+
+        });
+        
+    }
+
+    </script>
+
+</html>
