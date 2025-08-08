@@ -1,4 +1,4 @@
-/**
+/**console.log("this code is running");
  * Define a Car class with the following properties:
  * 1. make: (string)
  * 2.model: (string)
@@ -14,5 +14,22 @@
  * Run it and make sure it works.
  * 
  * Bonus Points: Attach screenshot of proof it works on your terminal.
+ *
+ *
+* class car {
+ * constructor(make,model,year) {
+ * this.make=make;
+ * this.model;
+ * this.year=year;
+ * 
+ * const Car = classy car("Mercedez-Benz", "S-class", 2018);
+ * 
+ * const car = classy car ("Mercedez-Benz", "C- class", 2025);
+ * 
+ * 
+ * console.log(car);
+ * 
+ * 
+ * }}
+ * 
  */
-

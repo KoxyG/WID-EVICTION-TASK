@@ -16,3 +16,40 @@
  * 
  * Bonus Points: Attach screenshot of proof it works on your terminal.
  */
+
+function divideByNumber(num) {
+    if (num===0) {
+        throw new Error("cannot divide by zero!");
+    }
+    return 100 /num;
+}
+
+
+{if (typeof num !=='number' ) {
+        throw new Error("Invalid number");
+    }
+
+    }
+
+{
+    
+
+}
+
+try{
+    console.log(dividebynumber(5));
+} catch (error) {
+    console.error(error.message);
+}
+try{
+    console.log(divideByNumber(0));
+ } catch (eror) {
+    console.error(error.message);
+ }
+try{
+    console.log(dividebynumber(hello));
+} catch (eror) {
+    console.error(error.message);
+}
+
+    
