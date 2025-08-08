@@ -5,6 +5,7 @@
  * 3. year: (number)
  * 
  * 
+ * 
  * Add a method getCarInfo() to the class that returns a string with the car’s details 
  * in the format: "Make: {make}, Model: {model}, Year: {year}"
  * 
@@ -16,3 +17,24 @@
  * Bonus Points: Attach screenshot of proof it works on your terminal.
  */
 
+
+class Car{
+    constructor(make,model,year){
+        this.make= make;
+        this.model=model;
+        this.year=year;
+        
+    }
+    
+    getCarInfor(){
+    
+return `Make: ${this.make}, Model: ${this.model}, Year: ${this.year}`
+    }
+   
+}
+
+const Car1= new Car ("BMW","white and black",2007);
+const Car2= new Car ("BMW", "silvercolor",2008);
+
+console.log(Car1);
+console.log(Car2);
