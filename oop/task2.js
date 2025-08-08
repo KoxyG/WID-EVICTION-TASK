@@ -16,3 +16,25 @@
  * Bonus Points: Attach screenshot of proof it works on your terminal.
  */
 
+// Define the Car class
+class Car {
+  constructor(make, model, year) {
+    this.make = make;
+    this.model = model;
+    this.year = year;
+  }
+
+  // Method to return car details
+  getCarInfo() {
+    return `Make: ${this.make}, Model: ${this.model}, Year: ${this.year}`;
+  }
+}
+
+// Create instances of the Car class
+const car1 = new Car("Toyota", "Corolla", 2020);
+const car2 = new Car("Honda", "Civic", 2022);
+
+// Call getCarInfo() on both
+console.log(car1.getCarInfo());  // Make: Toyota, Model: Corolla, Year: 2020
+console.log(car2.getCarInfo());  // Make: Honda, Model: Civic, Year: 2022
+
