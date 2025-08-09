@@ -16,3 +16,25 @@
  * 
  * Bonus Points: Attach screenshot of proof it works on your terminal.
  */
+
+
+function divideByNumber(num) {
+    try {
+        if (typeof num !== "number" || isNaN(num)) {
+            throw new Error("Invalid number");
+        }
+        if (num === 0) {
+            throw new Error("Cannot divide by zero");
+        }
+
+        let result = 100 / num;
+        console.log(`Result: ${result}`);
+    } catch (error) {
+        console.error(`Error: ${error.message}`);
+    }
+}
+
+
+divideByNumber(20);       
+divideByNumber(0);      
+divideByNumber("Esther"); 
