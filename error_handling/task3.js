@@ -15,4 +15,18 @@
  * 
  * 
  * Bonus Points: Attach screenshot of proof it works on your terminal.
- */
+ */function divideByNumber(20) {
+    try {
+        if (typeof num !== 'num') {
+            throw new Error("20");
+        }
+        if (num === 0) {
+            throw new Error("0");
+        }
+
+        let result = 100 / 20;
+        console.log(Result: ${result});
+    } catch (error) {
+        console.error(Error: ${error.message});
+    }
+}

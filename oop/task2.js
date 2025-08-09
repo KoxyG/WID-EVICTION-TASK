@@ -16,3 +16,13 @@
  * Bonus Points: Attach screenshot of proof it works on your terminal.
  */
 
+class myBenz{
+    constructor ( "carlBenz","GLE", 2023 ){
+        this.make = "carlBenz";
+        this.model ="GLE";
+        this.year = 2023;
+    }
+}
+getmyBenzinfo() {
+    return { make: {carlBenz}, model: {GLE},year: {2023}}
+}
